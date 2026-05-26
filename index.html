@@ -1,5 +1,4 @@
 <!doctype html>
-
 <html lang="en">
 
 <head>
@@ -7,6 +6,147 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Aleksander Slominski</title>
+  <meta name="description" content="Aleksander Slominski — Research Staff Member at IBM T.J. Watson Research Center. Serverless computing, LLMs, and cloud-native business applications.">
+  <link rel="canonical" href="https://aslom.github.io/">
+  <meta property="og:title" content="Aleksander Slominski">
+  <meta property="og:description" content="Research Staff Member at IBM T.J. Watson Research Center — serverless, LLMs, cloud-native business applications.">
+  <meta property="og:image" content="https://aslom.github.io/aslom.jpg">
+  <meta property="og:type" content="profile">
+  <meta name="twitter:card" content="summary">
+  <style>
+    :root {
+      --bg: #ffffff;
+      --fg: #1a1a1a;
+      --muted: #5c6470;
+      --accent: #0a58ca;
+      --rule: #e5e7eb;
+      --card-bg: #f6f7f9;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #111418;
+        --fg: #e8e8e8;
+        --muted: #9aa0a6;
+        --accent: #7eb1ff;
+        --rule: #262b32;
+        --card-bg: #1a1f25;
+      }
+    }
+    * { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      font-size: 17px;
+      line-height: 1.6;
+      color: var(--fg);
+      background: var(--bg);
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 2.25rem 1.25rem 4rem;
+    }
+    header { margin-bottom: 1.25rem; }
+    h1 {
+      font-size: 2rem;
+      margin: 0 0 0.25rem;
+      letter-spacing: -0.01em;
+    }
+    h2 {
+      font-size: 1.3rem;
+      margin: 2.75rem 0 1rem;
+      padding-bottom: 0.4rem;
+      border-bottom: 1px solid var(--rule);
+    }
+    h3 {
+      font-size: 1.08rem;
+      margin: 1.75rem 0 0.35rem;
+      line-height: 1.35;
+    }
+    p { margin: 0.75rem 0; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .tagline {
+      color: var(--muted);
+      margin: 0 0 0.75rem;
+    }
+    .socials {
+      display: flex;
+      gap: 0.5rem;
+      margin: 0.25rem 0 0.5rem;
+      flex-wrap: wrap;
+    }
+    .socials a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      border-radius: 8px;
+      color: var(--fg);
+      transition: background 0.15s ease;
+    }
+    .socials a:hover {
+      background: var(--card-bg);
+      text-decoration: none;
+    }
+    .socials svg {
+      width: 20px;
+      height: 20px;
+      fill: currentColor;
+    }
+    .portrait {
+      float: right;
+      width: 170px;
+      height: auto;
+      margin: 0.25rem 0 1rem 1.5rem;
+      border-radius: 10px;
+    }
+    img { max-width: 100%; height: auto; }
+    article.talk {
+      display: flow-root;
+      margin: 1.5rem 0 2rem;
+    }
+    .talk-meta {
+      color: var(--muted);
+      font-size: 0.92rem;
+      margin: 0.1rem 0 0.6rem;
+    }
+    .abstract { margin: 0.5rem 0; }
+    .abstract::before {
+      content: "Abstract — ";
+      color: var(--muted);
+      font-weight: 600;
+    }
+    .talk-links { font-size: 0.94rem; }
+    figure {
+      float: right;
+      margin: 0.4rem 0 1rem 1.5rem;
+      max-width: 230px;
+    }
+    figure img { border-radius: 6px; }
+    footer {
+      margin-top: 3.5rem;
+      padding-top: 1rem;
+      border-top: 1px solid var(--rule);
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+    @media (max-width: 560px) {
+      body { padding: 1.5rem 1rem 3rem; font-size: 16px; }
+      h1 { font-size: 1.55rem; }
+      h2 { font-size: 1.18rem; margin-top: 2.25rem; }
+      .portrait {
+        float: none;
+        display: block;
+        width: 140px;
+        margin: 0 0 1rem;
+      }
+      figure {
+        float: none;
+        max-width: 100%;
+        margin: 1rem 0;
+      }
+    }
+  </style>
   <!-- 100% privacy-first analytics -->
   <script data-collect-dnt="true" async src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
   <noscript><img src="https://queue.simpleanalyticscdn.com/noscript.gif?collect-dnt=true" alt="" referrerpolicy="no-referrer-when-downgrade"/></noscript>
@@ -14,112 +154,96 @@
 
 <body>
 
+  <header>
+    <h1>Aleksander Slominski</h1>
+    <p class="tagline">Research Staff Member, IBM T.J. Watson Research Center — serverless, LLMs, and cloud-native business applications.</p>
+    <nav class="socials" aria-label="Profiles and contact">
+      <a href="https://twitter.com/aslom" aria-label="X / Twitter" title="X / Twitter (@aslom)">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+      </a>
+      <a href="https://scholar.google.com/citations?user=sNJvK6kAAAAJ&amp;hl=en" aria-label="Google Scholar" title="Google Scholar">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2L1 9l4 2.18v6L12 21l7-3.82v-6l2-1.09V17h2V9L12 2zm0 2.236L18.764 9 12 12.764 5.236 9 12 4.236zM12 15.236l5-2.726v3.726L12 18.764l-5-2.528v-3.726l5 2.726z"/></svg>
+      </a>
+      <a href="https://dblp.org/pers/hd/s/Slominski:Aleksander" aria-label="DBLP" title="DBLP">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 3h10l5 5v13H5V3zm9 1.5V9h4.5L14 4.5zM7.5 12h9v1.5h-9V12zm0 3h9v1.5h-9V15zm0 3h6.5v1.5H7.5V18z"/></svg>
+      </a>
+      <a href="mailto:&#97;&#115;&#108;&#111;&#109;&#64;&#117;&#115;&#46;&#105;&#98;&#109;&#46;&#99;&#111;&#109;" aria-label="Email" title="Email">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5h18a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1zm1.5 2.2v.5l7.5 5.05 7.5-5.05v-.5H4.5zm15 1.95-7.05 4.74a.8.8 0 0 1-.9 0L4.5 9.15V17.5h15V9.15z"/></svg>
+      </a>
+    </nav>
+  </header>
 
-  <h1>Aleksander Slominski 
-  </h1>
-  
-
-  <p>
-    <img align="right" src="aslom.jpg" />
-    contact information
-    Research Staff Member at
-    Thomas J. Watson Research Center, Yorktown Heights, NY, US
-    <br/>twitter <a href="https://twitter.com/aslom">@aslom</a> and email aslom-()-us.ibm.com    
-    
-  </p>
-  
-<!--
-
-Aleksander Slominski is a Research Staff Member in the Component Systems Group at the IBM T.J. Watson Research Center. He is interested in development of applications for next generation Internet, Web Services, Orchestration, Components, Workflows, and Clouds.
--->
-
-  <p>
-    I am a Research Staff Member in the Serverless Group in Cloud Platform, Cognitive Systems And Services department at the IBM T.J. Watson Research Center. 
-  </p>
-
+  <img class="portrait" src="aslom.jpg" alt="Aleksander Slominski">
 
   <p>
-    I am using <a href="https://arxiv.org/abs/1710.08460">AI and serverless</a> to create delightful experience for business users in business applications and workflows. 
-    I am interested in applying emerging technologies (such as <a href="https://rd.springer.com/chapter/10.1007/978-3-319-74030-0_34">blockchain</a>) to build next-generation of business applications that are cloud-native.
+    I am a Research Staff Member in the Serverless Group, part of Cloud Platform and Cognitive Systems &amp; Services at the IBM T.J. Watson Research Center in Yorktown Heights, NY.
   </p>
 
   <p>
-    I am also co-organizing International Workshop on Serverless Computing (WoSC) to bring together researchers and practitioners to discuss their experiences and thoughts on future directions, talk slides are linked from: <a href="https://www.serverlesscomputing.org/workshops/">https://www.serverlesscomputing.org/workshops/</a>
+    I use <a href="https://arxiv.org/abs/1710.08460">AI and serverless</a> to build delightful experiences for business users in business applications and workflows, and I am interested in applying emerging technologies (such as <a href="https://rd.springer.com/chapter/10.1007/978-3-319-74030-0_34">blockchain</a>) to build next-generation, cloud-native business applications.
   </p>
 
   <p>
-    Previously I worked on <a href="http://www.apiful.io/">web APIs ecosystems</a>, <a href="https://researcher.watson.ibm.com/researcher/view_group.php?id=2972">business process analytics (process mining, clustering, etc.) and cloud-native service composition</a>. 
+    I co-organize the International Workshop on Serverless Computing (WoSC). Talk slides are linked from <a href="https://www.serverlesscomputing.org/workshops/">serverlesscomputing.org/workshops</a>.
   </p>
 
   <p>
-    You can find a list of publications at <a href="https://scholar.google.com/citations?user=sNJvK6kAAAAJ&hl=en">Google Scholar</a> and <a href="https://dblp.org/pers/hd/s/Slominski:Aleksander">DBLP</a> pages.
+    Previously I worked on <a href="http://www.apiful.io/">web APIs ecosystems</a> and <a href="https://researcher.watson.ibm.com/researcher/view_group.php?id=2972">business process analytics (process mining, clustering) and cloud-native service composition</a>.
   </p>
 
+  <p>
+    Publications: <a href="https://scholar.google.com/citations?user=sNJvK6kAAAAJ&amp;hl=en">Google Scholar</a> · <a href="https://dblp.org/pers/hd/s/Slominski:Aleksander">DBLP</a>.
+  </p>
 
-<h2>Selected talks</h2>
+  <h2>Selected talks &amp; publications</h2>
 
+  <article class="talk" id="wm23">
+    <h3>Publish-subscribe with large language models: improving expressiveness with natural language and generated custom notifications</h3>
+    <p class="talk-meta">Middleware 2023 · December 2023</p>
+    <p class="abstract">Large Language Models (LLMs) have raised the expectations of users to be able to use natural language (NL) to interact with computer systems such as publish/subscribe systems. We introduce a design that extends existing pub/sub paradigms by adding support for NL queries to subscribe to publications of unstructured text messages. To make the system easier for users our system can also customize the notifications, using LLMs to generate targeted NL answers from the matching publications.</p>
+    <p class="talk-links">
+      Slides: <a href="https://docs.google.com/presentation/d/1ityF4Mvnta4LkW9r037wOp6j1yLeW8BdpUjD41GX1VE/edit?usp=sharing">online</a> · <a href="presentations/Middleware2023-PubSub-with-LLMs.pdf">PDF</a> · Short paper: <a href="https://doi.org/10.1145/3626564.3629099">Open Access</a>
+    </p>
+  </article>
 
-<h3 id="wm23">Publish-subscribe with large language models: Improving expressiveness with natural language and generated custom notifications (2023-12)</h3>
+  <article class="talk" id="woc19">
+    <h3>Keynote: Rise of containers and serverless — past, present and future</h3>
+    <p class="talk-meta">The Fifth International Workshop on Container Technologies and Container Clouds · December 2019</p>
+    <p class="abstract">Containers and serverless computing are rising in interest and some would say are on top of the hype curve of the IT industry. The question remains: what is real and what is marketing? We look at what problems serverless computing is solving and how containers are key enabling technology. Why should serverless be an important topic for researchers? Why do containers matter for serverless? Why does serverless matter for containers? What is the future of containers and serverless, and how does it relate to the future of computing?</p>
+    <p class="talk-links">
+      Slides: <a href="https://docs.google.com/presentation/d/1q4kGxgaNUN2kgRG_pghn0VQyeoGKyyN8PNdiofoj2kU/edit?usp=sharing">online</a> · <a href="presentations/Rise of Containers and Serverless_ Past, Present, Future.pdf">PDF</a>
+    </p>
+  </article>
 
-Abstract: Large Language Models (LLMs) have raised the expectations of users to be able to use natural language (NL) to interact with computer systems such as publish/subscribe systems. We introduce a design that extends existing pub/sub paradigms by adding support for NL queries to subscribe to publications of unstructured text messages. To make the system easier for users our system can also customize the notifications, using LLMs to generate targeted NL answers from the matching publications.
+  <article class="talk" id="cacm19">
+    <figure>
+      <img src="images/111819_CACMpg45_The-Rise-of-Serverless.large.jpg" alt="The Rise of Serverless Computing — CACM cover, December 2019">
+    </figure>
+    <h3>The rise of serverless computing</h3>
+    <p class="talk-meta">Paul Castro, Vatche Ishakian, Vinod Muthusamy, Aleksander Slominski · Communications of the ACM, Vol. 62 No. 12, pp. 44–54 · December 2019 · <a href="https://doi.org/10.1145/3368454">DOI:10.1145/3368454</a></p>
+    <p class="abstract">Serverless computing — an emerging cloud-native paradigm for the deployment of applications and services — represents an evolution in cloud application development, programming models, abstractions, and platforms. It promises real pay-as-you-go billing (with millisecond granularity) with no waste of resources, and lowers the bar for developers by asking them to delegate all their operational complexity and scalability to the cloud provider. Delivering on these promises comes at the expense of restricting functionality. In this article we provide an overview of serverless computing, its evolution, general architecture, key characteristics and use cases that made it an attractive option for application development. Based on discussions with academics and industry experts during a series of organized serverless computing workshops (WoSC), we also identify the technical challenges and open problems.</p>
+    <p class="talk-links">
+      Full text: <a href="https://cacm.acm.org/magazines/2019/12/241054-the-rise-of-serverless-computing/fulltext">cacm.acm.org</a>
+    </p>
+  </article>
 
+  <article class="talk" id="ic2e19">
+    <h3>The future of computing is boring (and that is exciting!)</h3>
+    <p class="talk-meta">Aleksander Slominski, Vinod Muthusamy, Vatche Isahagian · IC2E 2019 Future Computing Track, pp. 97–101 · June 2019 · <a href="https://doi.org/10.1109/IC2E.2019.00023">DOI:10.1109/IC2E.2019.00023</a></p>
+    <p class="abstract">We see a trend where computing becomes a metered utility similar to how the electric grid evolved. Initially electricity was generated locally but economies of scale (and standardization) made it more efficient and economical to have utility companies managing the electric grid. Similar developments can be seen in computing where scientific grids paved the way for commercial cloud computing offerings. However, in our opinion, that evolution is far from finished and in this paper we bring forward the remaining challenges and propose a vision for the future of computing. In particular we focus on diverging trends in the costs of computing and developer time, which suggests that future computing architectures will need to optimize for developer time.</p>
+    <p class="talk-links">
+      Slides: <a href="https://docs.google.com/presentation/d/1q66QGc7kdDl3B4EgIK1TFuhhhLZDVKxPJoB2lDjmb3A/edit?usp=sharing">online</a> · <a href="presentations/IC2E 2019 Future of Computing is Boring (and that is exciting!).pdf">PDF</a> · <a href="presentations/IC2E 2019 Future of Computing is Boring (and that is exciting!).pptx">PPTX</a>
+    </p>
+  </article>
 
-<p>Slides [ <a href="https://docs.google.com/presentation/d/1ityF4Mvnta4LkW9r037wOp6j1yLeW8BdpUjD41GX1VE/edit?usp=sharing">online</a> ] [ <a href="presentations/Middleware2023-PubSub-with-LLMs.pdf">PDF</a> ]</p>
+  <h2>Contact</h2>
+  <p>
+    Email <a href="mailto:&#97;&#115;&#108;&#111;&#109;&#64;&#117;&#115;&#46;&#105;&#98;&#109;&#46;&#99;&#111;&#109;">aslom&#64;us&#46;ibm&#46;com</a> · X/Twitter <a href="https://twitter.com/aslom">@aslom</a>
+  </p>
 
-Short paper: <a href="https://doi.org/10.1145/3626564.3629099">Open Access</a> 
+  <footer>
+    <p>Updated 2026-05</p>
+  </footer>
 
-
-<h3 id="woc19">Keynote Talk:  Rise of Containers and Serverless: Past, Present and Future (2019-12)</h3>
-
-<p>
-  <a href="">The Fifth International Workshop on Container Technologies and Container Clouds</a> 
-</p>
-<p>
-Abstract: Containers and serverless computing are rising in interest and some would say are on top of the hype curve of the IT industry. The question remains: what is real and what is marketing? We look at what problems serverless computing is solving and how containers are key enabling technology. Why serverless should be an important topic for researchers? Why containers matter for serverless? Why serverless matter for containers?  What is future of containers and serverless? And how does it relate to the future of computing?
-</p>
-
-<p>Slides [ <a href="https://docs.google.com/presentation/d/1q4kGxgaNUN2kgRG_pghn0VQyeoGKyyN8PNdiofoj2kU/edit?usp=sharing">online</a> ] [ <a href="presentations/Rise of Containers and Serverless_ Past, Present, Future.pdf">PDF</a> ]</p>
-
-
-<img align="right" src="images/111819_CACMpg45_The-Rise-of-Serverless.large.jpg"/>
-
-<h3 id="cacm19">CACM Contributed Artcile: The rise of serverless computing (2019-12)
-</h3>
-
-<p>
-  By Paul Castro, Vatche Ishakian, Vinod Muthusamy, Aleksander Slominski
-</p>
-<p>
-  <a href="https://cacm.acm.org/magazines/2019/12/241054-the-rise-of-serverless-computing/fulltext"></a>Communications of the ACM, December 2019, Vol. 62 No. 12, Pages 44-54, DOI: 10.1145/3368454</p>
-</p>
-
-<p>Abstract: 
-  Serverless computing -- an emerging cloud-native paradigm for the deployment of applications and services -- represents an evolution in cloud application development, programming models, abstractions, and platforms. It promises a real pay-as-you-go billing (with millisecond granularity) with no waste of resources, and lowers the bar for developers by asking them to delegate all their operational complexity and scalability to the cloud provider. Delivering on these promises comes at the expense of restricting functionality. In this article we provide an overview of serverless computing, its evolution, general architecture, key characteristics and uses cases that made it an attractive option for application development. Based on discussions with academics and industry experts during a series of organized serverless computing workshops (WoSC), we also identify the technical challenges and open problems. 
-</p>
-
-<p>Full text [ <a href="https://cacm.acm.org/magazines/2019/12/241054-the-rise-of-serverless-computing/fulltext">online</a>  ] </p>
-
-<h3 id="ic2e19">IC2E Future Computing Track: The Future of Computing is Boring (and that is exciting!)(2019-06)</h3>
-
-<p>
-By Aleksander Slominski, Vinod Muthusamy, Vatche Isahagian 
-</p>
-<p>
-2019 IEEE International Conference on Cloud Engineering (IC2E), 97-101,  DOI: 10.1109/IC2E.2019.00023 
-</p>
-
-<p>Abstract:
-  We see a trend where computing becomes a metered utility similar to how the electric grid evolved. Initially electricity was generated locally but economies of scale (and standardization) made it more efficient and economical to have utility companies managing the electric grid. Similar developments can be seen in computing where scientific grids paved the way for commercial cloud computing offerings. However, in our opinion, that evolution is far from finished and in this paper we bring forward the remaining challenges and propose a vision for the future of computing. In particular we focus on diverging trends in the costs of computing and developer time, which suggests that future computing architectures will need to optimize for developer time.
-</p>
-
-<p>Slides [ <a href="https://docs.google.com/presentation/d/1q66QGc7kdDl3B4EgIK1TFuhhhLZDVKxPJoB2lDjmb3A/edit?usp=sharing">online</a> ] 
-  [ <a href="presentations/IC2E 2019 Future of Computing is Boring (and that is exciting!).pdf">PDF</a> ]
-  [ <a href="presentations/IC2E 2019 Future of Computing is Boring (and that is exciting!).pptx">PPTX</a> ]
-
-</p>
-
-<hr/>
-
-  <p>Updated 2020-01</p>
 </body>
 </html>
