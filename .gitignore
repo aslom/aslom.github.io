@@ -1,0 +1,9 @@
+# macOS
+.DS_Store
+
+# local agent / tooling state
+.claude/
+.local/
+.cache/
+.tmp/
+Library/

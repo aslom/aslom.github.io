@@ -6,10 +6,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Aleksander Slominski</title>
-  <meta name="description" content="Aleksander Slominski — Research Staff Member at IBM T.J. Watson Research Center. Serverless computing, LLMs, and cloud-native business applications.">
+  <meta name="description" content="Aleksander Slominski — Member of Technical Staff at IBM T.J. Watson Research Center. Serverless computing, LLMs, and cloud-native business applications.">
   <link rel="canonical" href="https://aslom.github.io/">
   <meta property="og:title" content="Aleksander Slominski">
-  <meta property="og:description" content="Research Staff Member at IBM T.J. Watson Research Center — serverless, LLMs, cloud-native business applications.">
+  <meta property="og:description" content="Member of Technical Staff at IBM T.J. Watson Research Center — serverless, LLMs, cloud-native business applications.">
   <meta property="og:image" content="https://aslom.github.io/aslom.jpg">
   <meta property="og:type" content="profile">
   <meta name="twitter:card" content="summary">
@@ -118,6 +118,20 @@
       font-weight: 600;
     }
     .talk-links { font-size: 0.94rem; }
+    .news { list-style: none; padding: 0; margin: 1rem 0; }
+    .news li {
+      display: flex;
+      gap: 0.75rem;
+      padding: 0.5rem 0;
+      border-bottom: 1px solid var(--rule);
+    }
+    .news time {
+      color: var(--muted);
+      font-size: 0.9rem;
+      font-variant-numeric: tabular-nums;
+      white-space: nowrap;
+      min-width: 5.5rem;
+    }
     figure {
       float: right;
       margin: 0.4rem 0 1rem 1.5rem;
@@ -146,6 +160,8 @@
         max-width: 100%;
         margin: 1rem 0;
       }
+      .news li { display: block; }
+      .news time { display: block; }
     }
   </style>
   <!-- 100% privacy-first analytics -->
@@ -157,8 +173,11 @@
 
   <header>
     <h1>Aleksander Slominski</h1>
-    <p class="tagline">Research Staff Member, IBM T.J. Watson Research Center — serverless, LLMs, and cloud-native business applications.</p>
+    <p class="tagline">Member of Technical Staff, IBM T.J. Watson Research Center — serverless, LLMs, and cloud-native business applications.</p>
     <nav class="socials" aria-label="Profiles and contact">
+      <a href="https://bsky.app/profile/aslom.bsky.social" aria-label="Bluesky" title="Bluesky (@aslom.bsky.social)">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5.202 2.857C7.954 4.922 10.913 9.11 12 11.358c1.087-2.247 4.046-6.436 6.798-8.501C20.783 1.366 24 .213 24 3.883c0 .732-.42 6.156-.667 7.037-.856 3.061-3.978 3.842-6.755 3.37 4.854.826 6.089 3.562 3.422 6.299-5.065 5.196-7.28-1.304-7.847-2.97-.104-.305-.152-.448-.153-.327 0-.121-.05.022-.153.327-.568 1.666-2.782 8.166-7.847 2.97-2.667-2.737-1.432-5.473 3.422-6.3-2.777.473-5.899-.308-6.755-3.369C.42 10.04 0 4.615 0 3.883c0-3.67 3.217-2.517 5.202-1.026"/></svg>
+      </a>
       <a href="https://twitter.com/aslom" aria-label="X / Twitter" title="X / Twitter (@aslom)">
         <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
       </a>
@@ -177,7 +196,7 @@
   <img class="portrait" src="aslom.jpg" alt="Aleksander Slominski">
 
   <p>
-    I am a Research Staff Member in the Serverless Group, part of Cloud Platform and Cognitive Systems &amp; Services at the IBM T.J. Watson Research Center in Yorktown Heights, NY.
+    I am a Member of Technical Staff in the Serverless Group, part of Cloud Platform and Cognitive Systems &amp; Services at the IBM T.J. Watson Research Center in Yorktown Heights, NY.
   </p>
 
   <p>
@@ -196,7 +215,26 @@
     Publications: <a href="https://scholar.google.com/citations?user=sNJvK6kAAAAJ&amp;hl=en">Google Scholar</a> · <a href="https://dblp.org/pers/hd/s/Slominski:Aleksander">DBLP</a>.
   </p>
 
+  <h2>News</h2>
+
+  <ul class="news">
+    <li id="n-2026-11">
+      <time datetime="2026-11-12">Nov 2026</time>
+      <span>Speaking at KubeCon + CloudNativeCon North America 2026 in Salt Lake City &mdash; <a href="#kubecon26">The seams are the trap: agent fleets from CNCF parts you already have</a>, with Mariusz Sabath.</span>
+    </li>
+  </ul>
+
   <h2>Selected talks &amp; publications</h2>
+
+  <article class="talk" id="kubecon26">
+    <h3>The seams are the trap: agent fleets from CNCF parts you already have</h3>
+    <p class="talk-meta">Aleksander Slominski, Mariusz Sabath &middot; KubeCon + CloudNativeCon North America 2026, Salt Lake City &middot; November 2026</p>
+    <p class="abstract">Every vendor is shipping an agent platform. You probably don&rsquo;t need one &mdash; what you need to know is how to compose the CNCF projects you already are running to get headless agents running safely in your clusters. We identify challenges: cold-start identity gap (the agent egresses before SPIRE issues an SVID), trust-scope drift (egress allowlist decided at deploy, stale by wake), unverified delivery (the event broker hands off events before signature check), and unbound audit (completion not chained back to the signed wake). We walk through one reference pattern: KEDA scaling deployments from queue depth, signed CloudEvents (SPIFFE source + JWS) as the wake contract, sidecar policy reading SVIDs at runtime, and the event broker log as tamper-evident audit. In a live demo we show: zero agent replicas &rarr; signed task event to agent wake &rarr; blocked egress on a wrong-scope call &rarr; completion bound to the wake event &rarr; scale to zero when agents are idle.</p>
+    <p class="talk-links">
+      Slides: <a href="presentations/KubeCon-NA-2026-The-Seams-Are-the-Trap.pdf">PDF</a> &middot; <a href="https://www.youtube.com/watch?v=s6494nZZ-hM">Demo video</a> &middot; <a href="https://events.linuxfoundation.org/kubecon-cloudnativecon-north-america/program/schedule/?id=1248035">Session page</a>
+      <br>Latest development: <a href="https://github.com/rossoctl/eventing-lab">github.com/rossoctl/eventing-lab</a>
+    </p>
+  </article>
 
   <article class="talk" id="wm23">
     <h3>Publish-subscribe with large language models: improving expressiveness with natural language and generated custom notifications</h3>
@@ -243,7 +281,7 @@
   </p>
 
   <footer>
-    <p>Updated 2026-05</p>
+    <p>Updated 2026-11</p>
   </footer>
 
 </body>
